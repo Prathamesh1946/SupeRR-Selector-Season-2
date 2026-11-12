@@ -1,0 +1,19 @@
+
+# Python environment
+venv/
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Confidential competition data
+data/raw/
+data/processed/
+data/
+
+# Environment variables
+.env
+
+# Generated results
+outputs/
