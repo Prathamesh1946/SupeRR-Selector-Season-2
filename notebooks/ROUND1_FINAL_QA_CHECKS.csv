@@ -1,0 +1,11 @@
+check,status,detail
+Batter rank sequence,PASS,Ranks must be exactly 1 to 10
+Bowler rank sequence,PASS,Ranks must be exactly 1 to 10
+Unique batters,PASS,No repeated batter
+Unique bowlers,PASS,No repeated bowler
+Batter score order,PASS,Highest batter score must be rank 1
+Bowler score order,PASS,Highest bowler score must be rank 1
+Batter pressure sample,PASS,All selected batters meet 100 pressure-ball threshold
+Bowler pressure sample,PASS,All selected bowlers meet 60 pressure-ball threshold
+Batter scores finite,PASS,No missing or infinite scores
+Bowler scores finite,PASS,No missing or infinite scores

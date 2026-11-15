@@ -1,0 +1,8 @@
+Model,Metric,Value
+First-Innings Expected Score,MAE,12.9227
+First-Innings Expected Score,RMSE,18.0928
+First-Innings Expected Score,R2,0.8925
+Chase Win Probability,ROC-AUC,0.8935
+Chase Win Probability,Accuracy,0.8088
+Chase Win Probability,Brier Score,0.1349
+Chase Win Probability,Log Loss,0.4182

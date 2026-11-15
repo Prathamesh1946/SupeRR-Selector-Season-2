@@ -1,0 +1,14 @@
+Stage,Implementation,Purpose
+Dataset,IPL and T20I ball-by-ball data from 2022 onwards,Analyse delivery-level performance in match context
+First-innings pressure,Expected-score model; standardized scoring deficit >= 1,Identify innings falling materially behind expected scoring trajectory
+Chase pressure,Logistic regression; predicted chase win probability <= 0.20,Identify deliveries in difficult chase states
+First-innings model,Random Forest; grouped cross-validation by match,Estimate expected score from innings and match state
+Chase model,Logistic Regression; grouped cross-validation by match,Estimate probability of winning the chase
+Batter eligibility,At least 100 pressure balls and 10 pressure matches; 100 normal balls and 10 normal matches,Reduce rankings driven by very small samples
+Batter shrinkage,n/(n+100) * player pressure SR + 100/(n+100) * eligible-player baseline,Moderate extreme strike rates from smaller samples
+Batter score,40% format-adjusted pressure SR; 25% SR improvement; 20% dot avoidance; 15% boundary contribution,Combine pressure output and improvement over normal performance
+Bowler eligibility,At least 60 pressure legal balls and 10 pressure matches; 60 normal legal balls and 10 normal matches,Require a minimum evidence base for bowling comparisons
+Bowler score,30% economy; 35% wicket rate; 20% dot balls; 15% boundary control,Combine run prevention and wicket-taking under pressure
+Format comparison,Format-specific baselines; pressure strike-rate adjustment for batters,Reduce differences caused by IPL and T20I scoring environments
+Robustness,"Pressure thresholds, shrinkage constants, scoring weights and stricter eligibility",Check whether leading players remain competitive under alternative assumptions
+Ranking,Descending category-specific composite score,Produce separate ordered top-10 batter and bowler lists

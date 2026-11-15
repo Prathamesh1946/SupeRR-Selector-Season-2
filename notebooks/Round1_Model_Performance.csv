@@ -1,0 +1,8 @@
+Model,Method,Evaluation,Metric,Value
+First innings expected-score model,Random Forest Regressor,5-fold GroupKFold by match_id,MAE,12.923
+First innings expected-score model,Random Forest Regressor,5-fold GroupKFold by match_id,RMSE,18.093
+First innings expected-score model,Random Forest Regressor,5-fold GroupKFold by match_id,R-squared,0.893
+Chase win-probability model,Logistic Regression,5-fold GroupKFold by match_id,ROC-AUC,0.893
+Chase win-probability model,Logistic Regression,5-fold GroupKFold by match_id,Accuracy,0.809
+Chase win-probability model,Logistic Regression,5-fold GroupKFold by match_id,Brier Score,0.135
+Chase win-probability model,Logistic Regression,5-fold GroupKFold by match_id,Log Loss,0.418

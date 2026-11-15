@@ -1,0 +1,10 @@
+Area,Method,Limitation
+Dataset,Historical IPL and T20I ball-by-ball data from 2022 onwards,Findings depend on the supplied dataset and its coverage
+First innings pressure,Expected-score model; pressure when standardized scoring deficit >= 1,Pressure depends on the model's expected-score estimate
+Chase pressure,Logistic regression; pressure when predicted win probability <= 20%,Win-probability calibration is imperfect
+Batting rating,"Format-adjusted pressure strike rate, improvement, dot avoidance and boundaries",Composite weights are analyst-selected
+Bowling rating,"Economy, wicket rate, dot balls and batter-boundary control",Some uncertain extras are excluded
+Sample size,Minimum pressure and normal sample requirements,Some players have substantially more observations than others
+IPL and T20I,Format-specific baselines and pressure strike-rate adjustment,Not every composite component is fully format-normalized
+Robustness,"Pressure threshold, shrinkage and weight sensitivity checks",Sensitivity does not eliminate uncertainty from the dataset
+Bowling extras,Provisional runs-conceded calculation,Undocumented extras fields may affect economy estimates

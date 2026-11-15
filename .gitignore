@@ -1,6 +1,7 @@
 
 # Python environment
 venv/
+.venv/
 __pycache__/
 *.pyc
 
@@ -11,6 +12,8 @@ __pycache__/
 data/raw/
 data/processed/
 data/
+.DS_Store
+.streamlit/secrets.toml
 
 # Environment variables
 .env
